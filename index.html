@@ -2,42 +2,115 @@
 <html lang="fa">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>منوی کافه</title>
-  <link rel="stylesheet" href="css.css">
+  <style>
+    body {
+      font-family: 'Vazirmatn', Tahoma, sans-serif;
+      background: #F2F4F5;
+      color: #333;
+      direction: rtl;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    header {
+      background: #2776df;
+      color: white;
+      padding: 20px;
+      font-size: 26px;
+      text-transform: uppercase;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .menu {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+    h2 {
+      border-bottom: 2px solid #eee;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+      color: #2776df;
+      font-size: 22px;
+      font-weight: 600;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      color: #555;
+    }
+    li {
+      font-size: 18px;
+      margin: 15px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px dashed #ccc;
+      padding-bottom: 8px;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+    li:hover {
+      transform: translateX(5px);
+      color: #2776df;
+    }
+    .price {
+      color: #1b4eb5;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .price::before {
+      content: "تومان";
+      font-size: 16px;
+      margin-left: 5px;
+    }
+    .menu li:last-child {
+      border-bottom: none;
+    }
+  </style>
 </head>
 <body>
   <header>☕ کافه ونیز</header>
 
-
   <div class="menu">
     <h2>نوشیدنی‌های گرم</h2>
     <ul>
-      <li>قهوه ترک <span class="price">80,000 تومان</span></li>
-      <li>کاپوچینو <span class="price">120,000 تومان</span></li>
-      <li>هات چاکلت <span class="price">100,000 تومان</span></li>
-      <li>لته نارگیل <span class="price">180,000 تومان</span></li>
-      <li>امریکانو<span class="price">140,000 تومان</span></li>
-      <li>کارامل ماکیاتو <span class="price">150,000 تومان</span></li>
-      <li>موکا<span class="price">200,000 تومان</span></li>
-      <li>ماچا<span class="price">198,000 تومان</span></li>
+      <li>قهوه ترک <span class="price">80,000</span></li>
+      <li>کاپوچینو <span class="price">120,000</span></li>
+      <li>هات چاکلت <span class="price">100,000</span></li>
+      <li>لته نارگیل <span class="price">180,000</span></li>
+      <li>امریکانو <span class="price">140,000</span></li>
+      <li>کارامل ماکیاتو <span class="price">150,000</span></li>
+      <li>موکا <span class="price">200,000</span></li>
+      <li>ماچا <span class="price">198,000</span></li>
+    </ul>
+
     <h2>نوشیدنی‌های سرد</h2>
     <ul>
-      <li>آیس لته<span class="price">130,000 تومان</span></li>
-      <li>ایس کارامل ماکیاتو<span class="price">190,000 تومان</span></li>
-      <li>ایس امریکانو<span class="price">140,000 تومان</span></li>
-      <li> ماچا نارگیل سرد<span class="price">198,000 تومان</span></li>
-      <li>ایس موکا<span class="price">220,000 تومان</span></li>
-      <li>لته نارگیل <span class="price">180,000 تومان</span></li>
+      <li>آیس لته <span class="price">130,000</span></li>
+      <li>ایس کارامل ماکیاتو <span class="price">190,000</span></li>
+      <li>ایس امریکانو <span class="price">140,000</span></li>
+      <li>ماچا نارگیل سرد <span class="price">198,000</span></li>
+      <li>ایس موکا <span class="price">220,000</span></li>
+      <li>لته نارگیل <span class="price">180,000</span></li>
     </ul>
 
     <h2>دسرها</h2>
     <ul>
-      <li>کیک شکلاتی <span class="price">150,000 تومان</span></li>
-      <li>چیزکیک <span class="price">160,000 تومان</span></li>
-            <li>دبی چیزکیک<span class="price">200,000 تومان</span></li>
-      <li>لوف پسته<span class="price">130,000 تومان</span></li>
-      <li>کروسان<span class="price">188,000 تومان</span></li>
-      <li>کوکی<span class="price">100,000 تومان</span></li>
+      <li>کیک شکلاتی <span class="price">150,000</span></li>
+      <li>چیزکیک <span class="price">160,000</span></li>
+      <li>دبی چیزکیک <span class="price">200,000</span></li>
+      <li>لوف پسته <span class="price">130,000</span></li>
+      <li>کروسان <span class="price">188,000</span></li>
+      <li>کوکی <span class="price">100,000</span></li>
     </ul>
   </div>
 </body>
